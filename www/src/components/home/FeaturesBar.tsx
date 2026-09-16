@@ -25,7 +25,7 @@ export function FeaturesBar() {
   ];
 
   return (
-    <section className="bg-foreground pt-28 pb-16 px-6 md:px-12 text-white">
+    <section className="bg-foreground pt-56 md:pt-28 pb-16 px-6 md:px-12 text-white">
       <div className="container mx-auto">
         {/* Popular Searches */}
         <div className="flex flex-wrap items-center gap-4 mb-16 pt-4">

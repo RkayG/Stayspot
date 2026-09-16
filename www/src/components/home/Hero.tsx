@@ -10,7 +10,7 @@ export function Hero() {
       ></div>
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
 
-      <div className="relative z-10 container mx-auto px-6 md:px-12 py-20 flex flex-col items-start pt-24 pb-32">
+      <div className="relative z-10 container mx-auto px-6 md:px-12 py-20 flex flex-col items-start pt-24 pb-48 md:pb-32">
         <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight max-w-3xl mb-4">
           Discover verified <br />
           <span className="text-primary">hotels, lounges & bars</span> <br />
