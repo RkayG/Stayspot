@@ -10,8 +10,8 @@ export function BottomNav() {
   const [isVisible, setIsVisible] = useState(true);
   const lastScrollY = useRef(0);
 
-  // Hide completely on detail pages
-  if (pathname.startsWith('/details')) {
+  // Hide completely on detail pages or gallery
+  if (pathname.startsWith('/details') || pathname.startsWith('/gallery')) {
     return null;
   }
 

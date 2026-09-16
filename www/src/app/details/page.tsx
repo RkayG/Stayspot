@@ -38,9 +38,9 @@ export default function HotelDetailsPage() {
             <CheckCircle2 className="w-3.5 h-3.5" />
             <span className="text-xs font-bold">Verified</span>
           </div>
-          <div className="bg-black/50 backdrop-blur-md text-white px-3 py-1 rounded-full text-xs font-bold shadow-md">
+          <Link href="/gallery" className="bg-black/50 backdrop-blur-md text-white px-3 py-1 rounded-full text-xs font-bold shadow-md hover:bg-black/70 transition-colors">
             1/25
-          </div>
+          </Link>
         </div>
       </div>
 
