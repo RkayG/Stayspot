@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { ShieldCheck, Camera, Tags, MapPin, Play } from 'lucide-react';
 import { Button } from '@/vibes/soul/primitives/button';
 
@@ -47,11 +46,11 @@ export function WhyBook() {
           {/* Video Card */}
           <div className="bg-[#1A1A1A] rounded-2xl p-6 border border-contrast-500/30 flex flex-col md:flex-row items-center gap-6">
             <div className="relative w-full md:w-1/2 h-32 rounded-xl overflow-hidden shrink-0">
-              <Image 
-                src="https://images.unsplash.com/photo-1542314831-c6a4d142104d?auto=format&fit=crop&q=80" 
+              {/* Background Image/Thumbnail */}
+              <img 
+                src="https://loremflickr.com/800/600/hotel,room?random=10" 
                 alt="Video thumbnail" 
-                fill 
-                className="object-cover opacity-70"
+                className="absolute inset-0 w-full h-full object-cover opacity-70"
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <button className="w-12 h-12 bg-black/50 backdrop-blur rounded-full flex items-center justify-center hover:bg-black/70 transition-colors">

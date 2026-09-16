@@ -1,12 +1,10 @@
-import Image from 'next/image';
-
 const destinations = [
-  { name: "Lagos", count: "2,450+ Places", image: "https://images.unsplash.com/photo-1616866160912-32a22289f6df?auto=format&fit=crop&q=80" },
-  { name: "Abuja", count: "1,320+ Places", image: "https://images.unsplash.com/photo-1628189874880-997f74811f26?auto=format&fit=crop&q=80" },
-  { name: "Ibadan", count: "980+ Places", image: "https://images.unsplash.com/photo-1549427050-4d4023d6a695?auto=format&fit=crop&q=80" },
-  { name: "Port Harcourt", count: "860+ Places", image: "https://images.unsplash.com/photo-1663428989531-90c74eb73605?auto=format&fit=crop&q=80" },
-  { name: "Benin City", count: "620+ Places", image: "https://images.unsplash.com/photo-1605646194788-fb36fbe53e5e?auto=format&fit=crop&q=80" },
-  { name: "Akure", count: "450+ Places", image: "https://images.unsplash.com/photo-1572978052163-9f893d5f5b5b?auto=format&fit=crop&q=80" },
+  { name: "Lagos", count: "2,450+ Places", image: "https://loremflickr.com/600/400/lagos,city?random=1" },
+  { name: "Abuja", count: "1,320+ Places", image: "https://loremflickr.com/600/400/abuja,city?random=2" },
+  { name: "Ibadan", count: "980+ Places", image: "https://loremflickr.com/600/400/ibadan,city?random=3" },
+  { name: "Port Harcourt", count: "860+ Places", image: "https://loremflickr.com/600/400/city,downtown?random=4" },
+  { name: "Benin City", count: "620+ Places", image: "https://loremflickr.com/600/400/city,street?random=5" },
+  { name: "Akure", count: "450+ Places", image: "https://loremflickr.com/600/400/city,building?random=6" },
 ];
 
 export function PopularDestinations() {
@@ -24,11 +22,10 @@ export function PopularDestinations() {
           {destinations.map((dest, idx) => (
             <div key={idx} className="group cursor-pointer">
               <div className="relative h-32 w-full rounded-xl overflow-hidden mb-3">
-                <Image 
+                <img 
                   src={dest.image} 
                   alt={dest.name} 
-                  fill 
-                  className="object-cover group-hover:scale-110 transition-transform duration-500" 
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
                 />
               </div>
               <h3 className="font-bold text-sm text-foreground">{dest.name}</h3>

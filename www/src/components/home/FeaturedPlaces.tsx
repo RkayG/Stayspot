@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import { Heart, Star, MapPin, Wifi, CheckCircle2, GlassWater, Music, Users } from 'lucide-react';
+import { CheckCircle2, Heart, Star, Wifi, Droplets, UtensilsCrossed, Music, GlassWater, Sparkles, Dumbbell, Disc, Car, Umbrella, Map, Users, MapPin } from 'lucide-react';
 import { Button } from '@/vibes/soul/primitives/button';
 
 const places = [
@@ -77,7 +76,7 @@ export function FeaturedPlaces() {
             <div key={place.id} className="bg-white rounded-2xl overflow-hidden border border-contrast-100 shadow-sm hover:shadow-lg transition-shadow">
               {/* Image */}
               <div className="relative h-48 w-full">
-                <Image src={place.image} alt={place.title} fill className="object-cover" />
+                <img src={place.image} alt={place.title} className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute top-3 left-3">
                   <span className="flex items-center gap-1 font-semibold text-xs bg-[var(--badge-success-background,color-mix(in_oklab,_hsl(var(--success)),_white_75%))] text-[var(--badge-text,hsl(var(--foreground)))] px-2 py-0.5 rounded">
                     <CheckCircle2 className="w-3 h-3" /> Verified
