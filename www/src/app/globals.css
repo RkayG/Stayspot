@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --primary: 96 100% 68%;
-  --accent: 96 100% 88%;
+  --primary: 43 74% 50%; /* Golden yellow matching the design */
+  --accent: 43 74% 80%;
   --background: 0 0% 100%;
   --foreground: 0 0% 7%;
   --success: 116 78% 65%;
@@ -16,6 +17,8 @@
   --contrast-300: 0 0% 70%;
   --contrast-400: 0 0% 54%;
   --contrast-500: 0 0% 34%;
+  --font-family-body: "Hedvig Letters Sans", Arial, sans-serif;
+  --font-family-heading: "Hedvig Letters Sans", Arial, sans-serif;
   --font-variation-settings-body: 'slnt' 0;
   --font-variation-settings-heading: 'slnt' 0;
   --font-size-xs: 0.75rem;
