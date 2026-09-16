@@ -1,5 +1,9 @@
+'use client';
+
 import Link from 'next/link';
+import { useState } from 'react';
 import { ArrowLeft, Search as SearchIcon, SlidersHorizontal, Calendar, Users, Heart, Star, CheckCircle2 } from 'lucide-react';
+import { FilterSheet } from '@/components/search/FilterSheet';
 
 const searchResults = [
   {
@@ -41,6 +45,8 @@ const searchResults = [
 ];
 
 export default function SearchPage() {
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white md:pt-8 md:pb-20">
       <div className="max-w-3xl mx-auto bg-[#0A0A0A] md:bg-[#111] md:rounded-2xl md:border md:border-contrast-500/20 md:overflow-hidden md:shadow-2xl">
@@ -58,7 +64,10 @@ export default function SearchPage() {
               className="bg-transparent border-none outline-none w-full text-sm font-medium text-white placeholder-contrast-400"
             />
           </div>
-          <button className="shrink-0 p-2.5 bg-[#1A1A1A] rounded-full border border-contrast-500/30 hover:bg-white/10 transition-colors">
+          <button 
+            onClick={() => setIsFilterOpen(true)}
+            className="shrink-0 p-2.5 bg-[#1A1A1A] rounded-full border border-contrast-500/30 hover:bg-white/10 transition-colors"
+          >
             <SlidersHorizontal className="w-5 h-5 text-white" />
           </button>
         </div>
@@ -140,6 +149,9 @@ export default function SearchPage() {
         </div>
         
       </div>
+
+      {/* Filter Bottom Sheet */}
+      <FilterSheet isOpen={isFilterOpen} onClose={() => setIsFilterOpen(false)} />
     </div>
   );
 }
