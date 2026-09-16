@@ -8,7 +8,7 @@ const places = [
     location: "Maitama, Abuja",
     rating: 4.8,
     reviews: 125,
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80",
+    image: "https://loremflickr.com/800/600/hotel,luxury?random=11",
     price: "₦120,000",
     features: [
       { icon: <Wifi className="w-3 h-3" />, text: "Wi-Fi" },
@@ -22,7 +22,7 @@ const places = [
     location: "Victoria Island, Lagos",
     rating: 4.5,
     reviews: 89,
-    image: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=80",
+    image: "https://loremflickr.com/800/600/lounge,bar?random=12",
     price: "₦25,000",
     features: [
       { icon: <Music className="w-3 h-3" />, text: "Live Music" },
@@ -36,7 +36,7 @@ const places = [
     location: "Ikeja GRA, Lagos",
     rating: 4.7,
     reviews: 76,
-    image: "https://images.unsplash.com/photo-1436018626274-89acd1d6ec9d?auto=format&fit=crop&q=80",
+    image: "https://loremflickr.com/800/600/bar,club?random=13",
     price: "₦15,000",
     features: [
       { icon: <Star className="w-3 h-3" />, text: "Sports" },
@@ -50,7 +50,7 @@ const places = [
     location: "Lekki, Lagos",
     rating: 4.9,
     reviews: 54,
-    image: "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80",
+    image: "https://loremflickr.com/800/600/resort,beach?random=14",
     price: "₦180,000",
     features: [
       { icon: <Users className="w-3 h-3" />, text: "Pool" },
